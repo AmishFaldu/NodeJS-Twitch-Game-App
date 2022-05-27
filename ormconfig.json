@@ -1,0 +1,10 @@
+{
+    "type": "postgres",
+    "url": "postgres://postgres-user:postgres-password@localhost:5432",
+    "database": "postgres",
+    "entities": ["./dist/**/*.entity.js"],
+    "cli": {
+        "migrationsDir": "src/migrations/"
+    },
+    "migrations": ["dist/migrations/*.js"]
+}
